@@ -123,7 +123,7 @@ const MenuDrawer = () => {
                 fontFamily: "Poppins, sans-serif",
 
                 ":hover": {
-                  bgcolor: selected === text ? "#dedf21" : undefined,
+                  bgcolor: "#dedf21",
                 },
               }}
             >
