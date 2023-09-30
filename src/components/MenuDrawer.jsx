@@ -33,6 +33,7 @@ const MenuDrawer = () => {
   const handleClick = (text) => {
     setSelected(text);
     setExpanded(false);
+    setState({ ...state, ["right"]: false });
   };
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -86,6 +87,7 @@ const MenuDrawer = () => {
                   {brands.map((brand, id) => (
                     <Button
                       key={id}
+                      onClick={toggleDrawer(anchor, false)}
                       sx={{
                         justifyContent: "left",
                         textTransform: "none",
