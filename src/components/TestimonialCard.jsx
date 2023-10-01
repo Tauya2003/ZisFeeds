@@ -11,6 +11,7 @@ const TestimonialCard = () => {
         gap: "12px",
         px: "18px",
         minWidth: 260,
+        maxWidth: 260,
         height: 131,
         borderRadius: "19px",
         bgcolor: "#67b36b",

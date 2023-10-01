@@ -1,6 +1,8 @@
 import { Box, Stack, Typography } from "@mui/material";
 import broilerStart from "../assets/images/BRANCH LAYOUT BROILER.png";
 import TestimonialCard from "../components/TestimonialCard";
+import Carousel from "../components/Carousel";
+import Accordion from "../components/Accordion";
 
 const Home = () => {
   return (
@@ -8,20 +10,17 @@ const Home = () => {
       <Box
         sx={{
           width: "100%",
-          // height: 449,
+          height: { md: "calc(100vh -)" },
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
         }}
       >
-        <img
-          src={broilerStart}
-          alt="zisfeeds broiler start"
-          style={{ width: "100%" }}
-        />
+        <Carousel />
       </Box>
 
       <Box
+        component={"section"}
         sx={{
           bgcolor: "#66bb6a",
           mt: "28px",
@@ -69,6 +68,7 @@ const Home = () => {
       </Box>
 
       <Box
+        component={"section"}
         sx={{
           gap: 1,
           display: "flex",
@@ -110,7 +110,9 @@ const Home = () => {
         </Typography>
       </Box>
 
-      <Box sx={{ width: "100%", height: 321, bgcolor: "#66bb6a" }}></Box>
+      <Box sx={{ width: "100%", height: 321, bgcolor: "#66bb6a", px:2}}>
+        <Accordion />
+      </Box>
 
       <Box
         sx={{
