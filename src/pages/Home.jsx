@@ -3,6 +3,7 @@ import broilerStart from "../assets/images/BRANCH LAYOUT BROILER.png";
 import TestimonialCard from "../components/TestimonialCard";
 import Carousel from "../components/Carousel";
 import Accordion from "../components/Accordion";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -110,7 +111,7 @@ const Home = () => {
         </Typography>
       </Box>
 
-      <Box sx={{ width: "100%", height: 321, bgcolor: "#66bb6a", px:2}}>
+      <Box sx={{ width: "100%", height: 321, bgcolor: "#66bb6a", px: 2 }}>
         <Accordion />
       </Box>
 
@@ -143,7 +144,7 @@ const Home = () => {
           direction={"row"}
           gap={"20px"}
           pl={"20px"}
-          pb={"50px"}
+          pb={"30px"}
           sx={{ width: "100%", overflowX: "auto" }}
         >
           <TestimonialCard />
@@ -151,6 +152,8 @@ const Home = () => {
           <TestimonialCard />
         </Stack>
       </Box>
+
+      <Footer />
     </Stack>
   );
 };
