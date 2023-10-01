@@ -2,6 +2,7 @@ import { Box, Stack, Typography } from "@mui/material";
 import logo from "../assets/Logo.svg";
 import { Facebook, Instagram, WhatsApp } from "@mui/icons-material";
 import { Link } from "react-router-dom";
+import { Link as MuiLink } from "@mui/material";
 
 const Footer = () => {
   return (
@@ -27,16 +28,22 @@ const Footer = () => {
           <img src={logo} alt="zisfeeds logo" style={{ width: 35 }} />
 
           <Stack direction={"row"} gap={"22px"}>
-            <Typography
-              sx={{
-                color: "#4c554e",
-                fontFamily: "Poppins, sans-sarif",
-                fontSize: 9,
-                fontWeight: 700,
-              }}
-            >
-              Vision
-            </Typography>
+            <MuiLink href="#vision" style={{ textDecoration: "none" }}>
+              <Typography
+                sx={{
+                  color: "rgba(76, 85, 78, 0.58)",
+                  fontFamily: "Poppins, sans-sarif",
+                  fontSize: 9,
+                  fontWeight: 700,
+
+                  ":hover": {
+                    color: "#4c554e",
+                  },
+                }}
+              >
+                Vision
+              </Typography>
+            </MuiLink>
 
             <Typography
               sx={{
@@ -44,6 +51,10 @@ const Footer = () => {
                 fontFamily: "Poppins,sans-sarif",
                 fontSize: 9,
                 fontWeight: 600,
+
+                ":hover": {
+                  color: "#4c554e",
+                },
               }}
             >
               Products
@@ -55,6 +66,10 @@ const Footer = () => {
                 fontFamily: "Poppins,sans-sarif",
                 fontSize: 9,
                 fontWeight: 600,
+
+                ":hover": {
+                  color: "#4c554e",
+                },
               }}
             >
               Contact Us

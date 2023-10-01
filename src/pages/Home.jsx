@@ -21,6 +21,7 @@ const Home = () => {
       </Box>
 
       <Box
+        id="vision"
         component={"section"}
         sx={{
           bgcolor: "#66bb6a",
