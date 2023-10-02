@@ -4,8 +4,10 @@ import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 import { KeyboardArrowDown, KeyboardArrowUp, Menu } from "@mui/icons-material";
 import { Collapse, Stack } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 const MenuDrawer = () => {
+  const navigate = useNavigate();
   const [state, setState] = React.useState({
     top: false,
     left: false,
@@ -16,14 +18,11 @@ const MenuDrawer = () => {
   const [expanded, setExpanded] = React.useState(false);
 
   const brands = [
-    "Pig Feeds",
-    "Chicken Feeds",
-    "Chicken Growers",
-    "Chicken Starters",
-    "Chicken Mash",
-    "Medicines",
-    "Rabit Feed",
-    "Duck Feed",
+    { name: "Chicken Feed", id: "chicken-feed" },
+    { name: "Pig Feed", id: "pig-feed" },
+    { name: "Rabit Feed", id: "rabit-feed" },
+    { name: "Duck Feed", id: "duck-feed" },
+    { name: "Medicines", id: "medicines" },
   ];
 
   const handleExpand = () => {
@@ -32,6 +31,7 @@ const MenuDrawer = () => {
 
   const handleClick = (text) => {
     setSelected(text);
+    navigate("/");
     setExpanded(false);
     setState({ ...state, ["right"]: false });
   };
@@ -62,7 +62,6 @@ const MenuDrawer = () => {
         {["Home", "About Us", "Brands", "News", "Contact Us"].map((text, id) =>
           text === "Brands" ? (
             <Box key={id}>
-              {" "}
               <Button
                 onClick={handleExpand}
                 endIcon={
@@ -87,18 +86,27 @@ const MenuDrawer = () => {
                   {brands.map((brand, id) => (
                     <Button
                       key={id}
-                      onClick={toggleDrawer(anchor, false)}
+                      onClick={() => {
+                        navigate(`brand/${brand.id}`);
+                        setState({ ...state, ["right"]: false });
+                        setSelected(brand.name);
+                      }}
                       sx={{
                         justifyContent: "left",
                         textTransform: "none",
                         color: "#fff",
                         fontSize: 10,
-                        transition: "ease-in-out 0.3s",
+                        transition: "0.3s",
                         fontFamily: "Poppins, sans-serif",
-                        fontWeight: 400,
+                        fontWeight: selected === brand.name ? 700 : 400,
+                        border:
+                          selected === brand.name
+                            ? "2px solid #dedf21"
+                            : "2px solid #0000",
+                        borderRadius: "14px",
                       }}
                     >
-                      {brand}
+                      {brand.name}
                     </Button>
                   ))}
                 </Stack>
