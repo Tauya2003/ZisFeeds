@@ -2,20 +2,22 @@ import { Box, CircularProgress, Stack, Typography } from "@mui/material";
 import { useParams } from "react-router-dom";
 import brands from "../assets/json/brands.json";
 import { useEffect, useState } from "react";
+import ProductCard from "../components/ProductCard";
+import Footer from "../components/Footer";
+import ImageLoader from "../components/ImageLoader";
+
 import pigBanner from "../assets/images/ads/image2.png";
 import chickenBanner from "../assets/images/ads/image1.png";
 import duckBanner from "../assets/images/ads/image4.png";
 import medicineBanner from "../assets/images/ads/image7.png";
 import rabbitBanner from "../assets/images/ads/image9.png";
-import ProductCard from "../components/ProductCard";
-import Footer from "../components/Footer";
 
 const banners = {
-  pig: pigBanner,
-  chicken: chickenBanner,
-  duck: duckBanner,
-  medicine: medicineBanner,
-  rabbit: rabbitBanner,
+  pig: { url: pigBanner, hash: "LkQS^KsKt7Nf-bM}WakCORs$V@R+" },
+  chicken: { url: chickenBanner, hash: "LOQcqkNQ%L%O~FxcWYNLJ]I+s;wc" },
+  duck: { url: duckBanner, hash: "LAL5Q?-@0JIn3@wN%3jI00skxvsq" },
+  medicine: { url: medicineBanner, hash: "LFLz,G}T4TIaD*rwDOW9TKE4M|xT" },
+  rabbit: { url: rabbitBanner, hash: "LRL5HdoOInWV00NYt7oL}_NtW,kB" },
 };
 
 const Brand = () => {
@@ -58,10 +60,17 @@ const Brand = () => {
           mb: "26px",
         }}
       >
-        <img
+        {/* <img
+          loading="lazy"
           src={banners[brandData.banner]}
           alt="brand banner"
           style={{ width: "100%" }}
+        /> */}
+        <ImageLoader
+          src={banners[brandData.banner].url}
+          hash={banners[brandData.banner].hash}
+          alt={brandData.name}
+          height={236}
         />
       </Box>
 

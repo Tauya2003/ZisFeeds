@@ -1,5 +1,4 @@
 import { Box, Stack, Typography } from "@mui/material";
-import broilerStart from "../assets/images/BRANCH LAYOUT BROILER.png";
 import TestimonialCard from "../components/TestimonialCard";
 import Carousel from "../components/Carousel";
 import Accordion from "../components/Accordion";

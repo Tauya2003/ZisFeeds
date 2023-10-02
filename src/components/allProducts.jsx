@@ -21,25 +21,40 @@ import Sb4 from "../assets/images/brands/Medicine/SB4.png";
 import VirusCleaner from "../assets/images/brands/Medicine/VIRUS CLEANER.png";
 
 export const products = {
-  boarAndSow: BoxAndSow,
-  pigConc: PigConc,
-  pigCreep: PigCreep,
-  pigGrower: PigGrower,
+  boarAndSow: { url: BoxAndSow, hash: "LUNdddNMT#t1p2xaVsR$g*Io#Q$+" },
+  pigConc: { url: PigConc, hash: "LUNdaWNMT#t1p2xaVsR$lBIo#Q$+" },
+  pigCreep: { url: PigCreep, hash: "LVNT]*NMY8t2p2xaa1R$lBIo#Q$+" },
+  pigGrower: { url: PigGrower, hash: "LUNm~5NMT#t1tVxaVsR$g*Io#Q$+" },
 
-  broilerConc: BroilerConc,
-  broilerFinisher: BroilerFinisher,
-  broilerGrowers: BroilerGrowers,
-  broilerStarter: BroilerStarter,
-  earlyLayersMash: EarlyLayersMash,
-  layersConc: LayersConc,
-  layersMash: LayersMash,
-  roadRunnerBreederMash: RoadRunnerBreederMash,
-  roadRunnerGrowers: RoadRunnerGrowers,
-  roadRunnerStarter: RoadRunnerStarter,
+  broilerConc: { url: BroilerConc, hash: "LINB7QIWyG-p5Qt7nAaf?Ds;wfRj" },
+  broilerFinisher: {
+    url: BroilerFinisher,
+    hash: "LFNKn]D+t:-p0yt7w6aL^#ohrZWS",
+  },
+  broilerGrowers: { url: BroilerGrowers, hash: "LFNB4JD+t:-p0yt7w6aL^zohrZW9" },
+  broilerStarter: { url: BroilerStarter, hash: "LUNKn.M}p3xt9|ofr?ai-qj]nMbE" },
+  earlyLayersMash: {
+    url: EarlyLayersMash,
+    hash: "LOO40iV@Y8tRK+WGiwoat-k8v#e=",
+  },
+  layersConc: { url: LayersConc, hash: "LOODkHV@Y8tRK+WGiwoat-k8v#ah" },
+  layersMash: { url: LayersMash, hash: "LOO40iW9Y8tRK+WGiwoat-k8rXah" },
+  roadRunnerBreederMash: {
+    url: RoadRunnerBreederMash,
+    hash: "LON1Jzrru6S~xLjFM{kDyXxIVXNF",
+  },
+  roadRunnerGrowers: {
+    url: RoadRunnerGrowers,
+    hash: "LLNm=?rXL4S~xLjEM{kWPV$l#7NF",
+  },
+  roadRunnerStarter: {
+    url: RoadRunnerStarter,
+    hash: "LLNm=?rXL4S~xLjEM{kWPV$l#7NF",
+  },
 
-  rabbitPallets: RabbitPallets,
+  rabbitPallets: { url: RabbitPallets, hash: "LSN1GPWIFrxt%Ot3iwNFu6EL,@xu" },
 
-  stressPack: StressPack,
-  sb4: Sb4,
-  virusCleaner: VirusCleaner,
+  stressPack: { url: StressPack, hash: "LiQSgSV_?%t3bdj]jFae%;bHZ,ay" },
+  sb4: { url: Sb4, hash: "LwR19gYk?FtRpxkXnOWUtjenVsad" },
+  virusCleaner: { url: VirusCleaner, hash: "LdL;:TWCuPoz0iofRQWATybIrDa_" },
 };

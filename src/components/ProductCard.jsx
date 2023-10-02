@@ -1,7 +1,6 @@
 import { Box, Button, Stack, Typography } from "@mui/material";
-import image from "../assets/images/brands/pig.png";
-
 import { products } from "./allProducts";
+import ImageLoader from "./ImageLoader";
 
 const ProductCard = ({ product }) => {
   return (
@@ -18,11 +17,19 @@ const ProductCard = ({ product }) => {
       }}
     >
       <Stack sx={{ width: 104, alignItems: "center", gap: "10px" }}>
-        <img
+        {/* <img
           src={products[product.image]}
           alt={product.name}
           style={{ width: "100%" }}
+        /> */}
+        <ImageLoader
+          src={products[product.image].url}
+          hash={products[product.image].hash}
+          alt={product.name}
+          height={152}
+          width={100}
         />
+
         <Button
           sx={{
             width: 56,
