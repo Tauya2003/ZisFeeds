@@ -1,10 +1,22 @@
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, CircularProgress, Stack, Typography } from "@mui/material";
 import { useParams } from "react-router-dom";
 import brands from "../assets/json/brands.json";
 import { useEffect, useState } from "react";
-import image from "../assets/images/ads/image2.png";
+import pigBanner from "../assets/images/ads/image2.png";
+import chickenBanner from "../assets/images/ads/image1.png";
+import duckBanner from "../assets/images/ads/image4.png";
+import medicineBanner from "../assets/images/ads/image7.png";
+import rabbitBanner from "../assets/images/ads/image9.png";
 import ProductCard from "../components/ProductCard";
 import Footer from "../components/Footer";
+
+const banners = {
+  pig: pigBanner,
+  chicken: chickenBanner,
+  duck: duckBanner,
+  medicine: medicineBanner,
+  rabbit: rabbitBanner,
+};
 
 const Brand = () => {
   const { brand } = useParams();
@@ -16,7 +28,20 @@ const Brand = () => {
     currentBrand && setBrandData(currentBrand);
   }, [brand]);
 
-  if (!brandData) return <div>Brand not found</div>;
+  if (!brandData)
+    return (
+      <Box
+        sx={{
+          width: "100vw",
+          height: "calc(100vh - 64px)",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <CircularProgress sx={{ color: "#046a21" }} />
+      </Box>
+    );
 
   return (
     <Box
@@ -27,8 +52,17 @@ const Brand = () => {
         pb: 3,
       }}
     >
-      <Box sx={{ width: 375, mb: "26px" }}>
-        <img src={image} alt="brand banner" style={{ width: "100%" }} />
+      <Box
+        sx={{
+          width: 375,
+          mb: "26px",
+        }}
+      >
+        <img
+          src={banners[brandData.banner]}
+          alt="brand banner"
+          style={{ width: "100%" }}
+        />
       </Box>
 
       <Box sx={{ px: "34px" }}>
@@ -78,6 +112,7 @@ const Brand = () => {
             color: "#4c554e",
             fontSize: 13,
             fontWeight: 700,
+            fontFamily: "Poppins, sans-sarif",
             textTransform: "uppercase",
             pt: "8px",
             width: 111,

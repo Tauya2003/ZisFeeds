@@ -1,14 +1,14 @@
 import { useState } from "react";
-import image1 from "../assets/images/brands/chickenGrowers.jpg";
-import image2 from "../assets/images/brands/pig.png";
-import image3 from "../assets/images/brands/ZIS LAYERS SACK1.jpg";
-import image4 from "../assets/images/brands/chickenStarters.jpg";
-import image5 from "../assets/images/brands/rabbit.jpg";
-import image6 from "../assets/images/brands/ZIS ROAD RUNNERS sack3.jpg";
-import { Box, Button, IconButton } from "@mui/material";
+import { Box, IconButton } from "@mui/material";
 import { Visibility } from "@mui/icons-material";
 
-const cards = [image1, image2, image3, image4, image5, image6];
+import image1 from "../assets/images/brands/Chicken/Road Runner Breeder Mash.png";
+import image5 from "../assets/images/brands/Pigs/BOAR&SOW.png";
+import image3 from "../assets/images/brands/Pigs/PIG CREEP.png";
+import image4 from "../assets/images/brands/Chicken/Broiler Starter.png";
+import image2 from "../assets/images/brands/Rabbit/Rabbit Pallet.png";
+
+const cards = [image1, image2, image3, image4, image5];
 
 const Accordion = () => {
   const [active, setActive] = useState(0);
@@ -24,7 +24,7 @@ const Accordion = () => {
             mt: "65px",
             position: "relative",
             overflow: "hidden",
-            bgcolor: "#fff",
+            // bgcolor: "#fff",
             width: active === index ? 265 : 60,
             height: 200,
             borderRadius: "10px",
@@ -32,17 +32,8 @@ const Accordion = () => {
             alignItems: "flex-end",
             opacity: active === index ? 1 : 0.9,
             transition: "0.5s",
-            boxShadow: "-2px 9px 21px rgba(0, 0, 0, 0.74)",
-
-            // ".material-symbols-outlined": {
-            //   display: "grid",
-            //   placeItems: "center",
-            //   width: "50px",
-            //   height: 50,
-            //   background: "rgb(225 225 225 / 80%)",
-            //   borderRadius: "50%",
-            //   fontSize: "28px",
-            // },
+            // boxShadow: "-2px 9px 21px rgba(0, 0, 0, 0.74)",
+            boxShadow: "0px 0 10px #046a2150",
           }}
         >
           <img
@@ -78,7 +69,7 @@ const Accordion = () => {
             }}
           >
             <IconButton>
-              <Visibility sx={{ color: "#046a21"}} />
+              <Visibility sx={{ color: "#046a21" }} />
             </IconButton>
           </Box>
         </Box>

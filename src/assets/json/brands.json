@@ -2,26 +2,56 @@
     {
         "id": "chicken-feed",
         "name": "Chicken Feed",
-        "banner": "",
+        "banner": "chicken",
         "products": [
             {
-                "name": "Boar And Sow Meal",
-                "image": "",
+                "name": "Broiler Concentrate",
+                "image": "broilerConc",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
             },
             {
-                "name": "Pig Concentrate",
-                "image": "",
+                "name": "Broiler Finisher",
+                "image": "broilerFinisher",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
             },
             {
-                "name": "Pig Creep Meal",
-                "image": "",
+                "name": "Broiler Growers",
+                "image": "broilerGrowers",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
             },
             {
-                "name": "Pig Grower Meal",
-                "image": "",
+                "name": "Broiler Starter",
+                "image": "broilerStarter",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+                "name": "Early Layers Mash",
+                "image": "earlyLayersMash",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+                "name": "Layers Concentrate",
+                "image": "layersConc",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+                "name": "Layers Mash",
+                "image": "layersMash",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+                "name": "Road Runner Breeder Mash",
+                "image": "roadRunnerBreederMash",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+                "name": "Road Runner Growers",
+                "image": "roadRunnerGrowers",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+                "name": "Road Runner Starter",
+                "image": "roadRunnerStarter",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
             }
         ]
@@ -29,53 +59,38 @@
     {
         "id": "pig-feed",
         "name": "Pig Feed",
-        "banner": "../assets/images/ads/image2.png",
+        "banner": "pig",
         "products": [
             {
                 "name": "Boar And Sow Meal",
-                "image": "",
+                "image": "boarAndSow",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
             },
             {
                 "name": "Pig Concentrate",
-                "image": "",
+                "image": "pigConc",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
             },
             {
                 "name": "Pig Creep Meal",
-                "image": "",
+                "image": "pigCreep",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
             },
             {
                 "name": "Pig Grower Meal",
-                "image": "",
+                "image": "pigGrower",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
             }
         ]
     },
     {
-        "id": "rabit-feed",
-        "name": "Rabit Feed",
-        "banner": "",
+        "id": "rabbit-feed",
+        "name": "Rabbit Feed",
+        "banner": "rabbit",
         "products": [
             {
-                "name": "Boar And Sow Meal",
-                "image": "",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            },
-            {
-                "name": "Pig Concentrate",
-                "image": "",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            },
-            {
-                "name": "Pig Creep Meal",
-                "image": "",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            },
-            {
-                "name": "Pig Grower Meal",
-                "image": "",
+                "name": "Rabbit Pallets",
+                "image": "rabbitPallets",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
             }
         ]
@@ -83,53 +98,27 @@
     {
         "id": "duck-feed",
         "name": "Duck Feed",
-        "banner": "",
-        "products": [
-            {
-                "name": "Boar And Sow Meal",
-                "image": "",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            },
-            {
-                "name": "Pig Concentrate",
-                "image": "",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            },
-            {
-                "name": "Pig Creep Meal",
-                "image": "",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            },
-            {
-                "name": "Pig Grower Meal",
-                "image": "",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            }
-        ]
+        "banner": "duck",
+        "products": []
     },
     {
         "id": "medicines",
         "name": "medicines",
-        "banner": "",
+        "banner": "medicine",
         "products": [
             {
-                "name": "Boar And Sow Meal",
-                "image": "",
+                "name": "3D Stress Pack",
+                "image": "stressPack",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
             },
             {
-                "name": "Pig Concentrate",
-                "image": "",
+                "name": "sb4",
+                "image": "sb4",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
             },
             {
-                "name": "Pig Creep Meal",
-                "image": "",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            },
-            {
-                "name": "Pig Grower Meal",
-                "image": "",
+                "name": "Virus Cleaner",
+                "image": "virusCleaner",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
             }
         ]
