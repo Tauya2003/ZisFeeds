@@ -56,30 +56,31 @@ const Brand = () => {
     >
       <Box
         sx={{
-          width: 375,
+          width: "100%",
           mb: "26px",
         }}
       >
-        {/* <img
-          loading="lazy"
-          src={banners[brandData.banner]}
-          alt="brand banner"
-          style={{ width: "100%" }}
-        /> */}
         <ImageLoader
           src={banners[brandData.banner].url}
           hash={banners[brandData.banner].hash}
           alt={brandData.name}
-          height={236}
+          height={{ xs: 236, sm: 410 }}
         />
       </Box>
 
-      <Box sx={{ px: "34px" }}>
+      <Box
+        sx={{
+          px: { xs: "34px", sm: "87px" },
+          display: { lg: "flex" },
+          flexDirection: "column",
+          alignItems: { lg: "center" },
+        }}
+      >
         <Typography
           sx={{
             color: "#4c554e",
             fontFamily: "Poppins, sans-sarif",
-            fontSize: 17,
+            fontSize: { xs: 17, sm: 21, lg: 23, xl: 28 },
             fontWeight: 700,
             textTransform: "uppercase",
           }}
@@ -89,12 +90,13 @@ const Brand = () => {
 
         <Typography
           sx={{
-            mt: "14px",
+            mt: { xs: "14px", sm: "21px" },
             color: "#4c554e",
             fontFamily: "Poppins, sans-sarif",
-            fontSize: 10,
+            fontSize: { xs: 10, sm: 11, lg: 12, xl: 16 },
             fontWeight: 500,
-            textAlign: "justify",
+            textAlign: { xs: "justify", lg: "center" },
+            width: { xl: 1380 },
           }}
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -117,21 +119,29 @@ const Brand = () => {
       >
         <Typography
           sx={{
-            borderTop: "solid  #e8f5e9 6px",
+            borderTop: { xs: "solid  #e8f5e9 4px", sm: "solid  #e8f5e9 8px" },
             color: "#4c554e",
-            fontSize: 13,
+            fontSize: { xs: 13, sm: 17, xl: 21 },
             fontWeight: 700,
             fontFamily: "Poppins, sans-sarif",
             textTransform: "uppercase",
             pt: "8px",
-            width: 111,
+            width: { xs: 111, sm: 145, xl: 160 },
+            borderRadius: "25px",
             textAlign: "center",
           }}
         >
           Products
         </Typography>
 
-        <Stack gap={2} mt={3}>
+        <Stack
+          gap={{ xs: 2, sm: 3, lg: 5, xl: 10 }}
+          mt={3}
+          direction={"row"}
+          flexWrap={"wrap"}
+          px={"auto"}
+          justifyContent={"center"}
+        >
           {brandData.products.map((product, idx) => (
             <ProductCard key={idx} product={product} />
           ))}
