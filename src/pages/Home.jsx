@@ -24,23 +24,23 @@ const Home = () => {
         component={"section"}
         sx={{
           bgcolor: "#66bb6a",
-          mt: "28px",
+          mt: { xs: "28px", sm: "60px" },
           px: "20px",
-          gap: 1,
+          gap: { xs: 1, sm: 4 },
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
           borderRadius: "35px",
-          width: { xs: 332 },
-          height: { xs: 221 },
+          width: { xs: 332, sm: 630 },
+          height: { xs: 221, sm: 325 },
         }}
       >
         <Typography
           sx={{
             color: "#fff",
             fontFamily: "Poppins, sans-sarif",
-            fontSize: 20,
+            fontSize: { xs: 20, sm: 25.62 },
             fontWeight: 700,
           }}
         >
@@ -51,9 +51,10 @@ const Home = () => {
           sx={{
             color: "#e8f5e9",
             fontFamily: "Poppins, sans-sarif",
-            fontSize: 9,
+            fontSize: { xs: 9, sm: 12.87 },
             fontWeight: 500,
             textAlign: "center",
+            width: { sm: 541.45 },
           }}
         >
           Welcome to our world of agricultural feed production, where quality
@@ -83,7 +84,7 @@ const Home = () => {
             mt: "42px",
             color: "#4c554e",
             fontFamily: "Poppins, sans-sarif",
-            fontSize: 13,
+            fontSize: { xs: 13, sm: 18.75 },
             fontWeight: 700,
             textTransform: "uppercase",
           }}
@@ -95,7 +96,8 @@ const Home = () => {
           sx={{
             color: "#4c554e",
             fontFamily: "Poppins, sans-sarif",
-            fontSize: 8,
+            fontSize: { xs: 8, sm: 11.52 },
+            width: { sm: 560 },
             fontStyle: "italic",
             textAlign: "center",
             mx: 5,
@@ -111,7 +113,14 @@ const Home = () => {
         </Typography>
       </Box>
 
-      <Box sx={{ width: "100%", height: 321, bgcolor: "#66bb6a", px: 2 }}>
+      <Box
+        sx={{
+          width: "100%",
+          height: { xs: 321, sm: 504 },
+          bgcolor: "#66bb6a",
+          px: 2,
+        }}
+      >
         <Accordion />
       </Box>
 
@@ -130,11 +139,13 @@ const Home = () => {
             borderTop: "solid 4px #4c554e",
             color: "#4c554e",
             fontFamily: "Poppins, sans-sarif",
-            fontSize: 13,
+            fontSize: { xs: 13, sm: 18 },
             fontWeight: 700,
             textTransform: "uppercase",
+            width: { sm: 190 },
+            textAlign: "center",
             pt: "7px",
-            mt: "30px",
+            mt: {xs:"30px", sm:'40'},
           }}
         >
           TESTIMONIALS

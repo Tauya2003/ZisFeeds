@@ -17,17 +17,17 @@ const Footer = () => {
     >
       <Box
         sx={{
-          width: 280,
+          width: "75vw",
           mt: 2,
           display: "flex",
           flexDirection: "column",
           gap: "21px",
         }}
       >
-        <Stack direction={"row"} gap={"31px"} alignItems={"center"}>
+        <Stack direction={"row"} gap={{xs:"31px",sm:"90px"}} alignItems={"center"}>
           <img src={logo} alt="zisfeeds logo" style={{ width: 35 }} />
 
-          <Stack direction={"row"} gap={"22px"}>
+          <Stack direction={"row"} gap={{ xs: "22px", sm: "87px" }}>
             <MuiLink href="#vision" style={{ textDecoration: "none" }}>
               <Typography
                 sx={{
@@ -79,7 +79,7 @@ const Footer = () => {
 
         <Stack
           direction={"row"}
-          gap={"46px"}
+          gap={{xs: "46px", sm: "100px"}}
           sx={{ borderBottom: "1px solid #0002", pb: "11px" }}
         >
           <Box>

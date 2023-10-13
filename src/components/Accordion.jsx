@@ -11,28 +11,28 @@ import image2 from "../assets/images/brands/Rabbit/Rabbit Pallet.png";
 const cards = [image1, image2, image3, image4, image5];
 
 const Accordion = () => {
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState(2);
 
   return (
     <Box component={"section"} sx={{ display: "flex", gap: "5px" }}>
       {cards.map((card, index) => (
         <Box
           component={"article"}
-          key={card}
+          key={index}
           onClick={() => setActive(index)}
           sx={{
-            mt: "65px",
+            mt: { xs: "65px", sm: 1.5 },
             position: "relative",
             overflow: "hidden",
-            // bgcolor: "#fff",
-            width: active === index ? 265 : 60,
-            height: 200,
+            bgcolor: active !== index && "#fff",
+            width:
+              active === index ? { xs: 265, sm: 350 } : { xs: 60, sm: 100 },
+            height: { xs: 200, sm: 478.46 },
             borderRadius: "10px",
             display: "flex",
             alignItems: "flex-end",
             opacity: active === index ? 1 : 0.9,
             transition: "0.5s",
-            // boxShadow: "-2px 9px 21px rgba(0, 0, 0, 0.74)",
             boxShadow: "0px 0 10px #046a2150",
           }}
         >

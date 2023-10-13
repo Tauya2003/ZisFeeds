@@ -10,9 +10,9 @@ const TestimonialCard = () => {
         justifyContent: "center",
         gap: "12px",
         px: "18px",
-        minWidth: 260,
-        maxWidth: 260,
-        height: 131,
+        minWidth: {xs:260,sm: 355},
+        maxWidth:  {xs:260,sm: 355},
+        height: {xs: 131, sm: 175},
         borderRadius: "19px",
         bgcolor: "#67b36b",
       }}
