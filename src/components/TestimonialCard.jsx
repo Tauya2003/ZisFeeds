@@ -9,18 +9,22 @@ const TestimonialCard = () => {
         alignItems: "center",
         justifyContent: "center",
         gap: "12px",
-        px: "18px",
-        minWidth: {xs:260,sm: 355},
-        maxWidth:  {xs:260,sm: 355},
-        height: {xs: 131, sm: 175},
-        borderRadius: "19px",
+        px: {xs: "18px", lg: '25px'},
+        minWidth: { xs: 260, sm: 355, lg: 421.48 },
+        maxWidth: { xs: 260, sm: 355, lg: 421.48 },
+        height: { xs: 131, sm: 175, lg: 227.9 },
+        borderRadius: { xs: "19px", lg: "34px" },
         bgcolor: "#67b36b",
       }}
     >
       <Avatar
         src={image}
         alt="Takudzwa Hyut"
-        sx={{ width: 67, height: 67, border: "solid 7px #7fd67b" }}
+        sx={{
+          width: { xs: 67, lg: 100 },
+          height: { xs: 67, lg: 100 },
+          border: "solid 7px #7fd67b",
+        }}
       />
 
       <Stack gap={1}>
@@ -28,7 +32,7 @@ const TestimonialCard = () => {
           sx={{
             color: "#fff",
             fontFamily: "Poppins, sans-sarif",
-            fontSize: 13,
+            fontSize: { xs: 13, lg: 16 },
             fontWeight: 700,
           }}
         >
@@ -39,9 +43,8 @@ const TestimonialCard = () => {
           sx={{
             color: "#fff",
             fontFamily: "Poppins, sans-sarif",
-            fontSize: 6,
+            fontSize: { xs: 6, lg: 12 },
             fontStyle: "italic",
-            textAlign: "justify",
           }}
         >
           "Since switching to their feed products, we have seen a remarkable

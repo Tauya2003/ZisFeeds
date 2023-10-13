@@ -10,7 +10,7 @@ const Home = () => {
       <Box
         sx={{
           width: "100%",
-          height: { md: "calc(100vh -)" },
+          // height: { lg: 362 },
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -24,23 +24,23 @@ const Home = () => {
         component={"section"}
         sx={{
           bgcolor: "#66bb6a",
-          mt: { xs: "28px", sm: "60px" },
+          mt: { xs: "28px", sm: "60px", lg: "72px" },
           px: "20px",
-          gap: { xs: 1, sm: 4 },
+          gap: { xs: 1, sm: 4, lg: 2 },
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          borderRadius: "35px",
-          width: { xs: 332, sm: 630 },
-          height: { xs: 221, sm: 325 },
+          borderRadius: { xs: "35px", lg: "77px", xl: "81px" },
+          width: { xs: 332, sm: 630, lg: 1034, xl: 1466.98 },
+          height: { xs: 221, sm: 325, lg: 316, xl: 350 },
         }}
       >
         <Typography
           sx={{
             color: "#fff",
             fontFamily: "Poppins, sans-sarif",
-            fontSize: { xs: 20, sm: 25.62 },
+            fontSize: { xs: 20, sm: 26, lg: 38 },
             fontWeight: 700,
           }}
         >
@@ -51,10 +51,10 @@ const Home = () => {
           sx={{
             color: "#e8f5e9",
             fontFamily: "Poppins, sans-sarif",
-            fontSize: { xs: 9, sm: 12.87 },
+            fontSize: { xs: 9, sm: 13, xl: 16 },
             fontWeight: 500,
             textAlign: "center",
-            width: { sm: 541.45 },
+            width: { sm: 542, lg: 904, xl: 996.62 },
           }}
         >
           Welcome to our world of agricultural feed production, where quality
@@ -81,10 +81,10 @@ const Home = () => {
       >
         <Typography
           sx={{
-            mt: "42px",
+            mt: { xs: "42px", lg: "58px" },
             color: "#4c554e",
             fontFamily: "Poppins, sans-sarif",
-            fontSize: { xs: 13, sm: 18.75 },
+            fontSize: { xs: 13, sm: 18.75, lg: 26.72, xl: 30.72 },
             fontWeight: 700,
             textTransform: "uppercase",
           }}
@@ -96,12 +96,12 @@ const Home = () => {
           sx={{
             color: "#4c554e",
             fontFamily: "Poppins, sans-sarif",
-            fontSize: { xs: 8, sm: 11.52 },
-            width: { sm: 560 },
+            fontSize: { xs: 8, sm: 11.52, lg: 15.63 },
+            width: { sm: 560, lg: 793.51, xl: 1098.55 },
             fontStyle: "italic",
             textAlign: "center",
             mx: 5,
-            pb: "30px",
+            pb: { xs: "30px", lg: "85px" },
           }}
         >
           Leveraging state-of-the-art technology, we produce nutritionally
@@ -116,6 +116,8 @@ const Home = () => {
       <Box
         sx={{
           width: "100%",
+          display: {md: "grid"},
+          placeContent:{md: "center"},
           height: { xs: 321, sm: 504 },
           bgcolor: "#66bb6a",
           px: 2,
@@ -136,16 +138,16 @@ const Home = () => {
       >
         <Typography
           sx={{
-            borderTop: "solid 4px #4c554e",
+            borderTop: { xs: "solid 4px #4c554e", lg: "solid 8px #4c554e" },
             color: "#4c554e",
             fontFamily: "Poppins, sans-sarif",
-            fontSize: { xs: 13, sm: 18 },
+            fontSize: { xs: 13, sm: 18, lg: 25.36, xl: 30.98 },
             fontWeight: 700,
             textTransform: "uppercase",
-            width: { sm: 190 },
+            width: { sm: 190, lg: 248 },
             textAlign: "center",
             pt: "7px",
-            mt: {xs:"30px", sm:'40'},
+            mt: { xs: "30px", sm: "40" },
           }}
         >
           TESTIMONIALS
@@ -153,11 +155,12 @@ const Home = () => {
 
         <Stack
           direction={"row"}
-          gap={"20px"}
+          gap={{xs:"20px",xl: "40px"}}
           pl={"20px"}
           pb={"30px"}
           sx={{ width: "100%", overflowX: "auto" }}
         >
+          <TestimonialCard />
           <TestimonialCard />
           <TestimonialCard />
           <TestimonialCard />
