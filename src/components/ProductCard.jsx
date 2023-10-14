@@ -1,8 +1,12 @@
 import { Box, Button, Stack, Typography } from "@mui/material";
 import { products } from "./allProducts";
 import ImageLoader from "./ImageLoader";
+import { useState } from "react";
+import ReadMoreModal from "./ReadMoreModal";
 
 const ProductCard = ({ product }) => {
+  const [open, setOpen] = useState(false);
+
   return (
     <Box
       sx={{
@@ -17,15 +21,10 @@ const ProductCard = ({ product }) => {
       }}
     >
       <Stack sx={{ width: 104, alignItems: "center", gap: "10px" }}>
-        {/* <img
-          src={products[product.image]}
-          alt={product.name}
-          style={{ width: "100%" }}
-        /> */}
         <ImageLoader
-          src={products[product.image].url}
-          hash={products[product.image].hash}
-          alt={product.name}
+          src={products[product?.image]?.url}
+          hash={products[product?.image]?.hash}
+          alt={product?.name}
           height={152}
           width={100}
         />
@@ -80,7 +79,24 @@ const ProductCard = ({ product }) => {
             lineHeight: "14px",
           }}
         >
-          {product?.description}$
+          {product?.description?.slice(0, 350)}...{" "}
+          <Box
+            component={"span"}
+            onClick={() => setOpen(true)}
+            sx={{
+              color: "#046a21",
+              fontWeight: 600,
+              userSelect: "none",
+              cursor: "pointer",
+            }}
+          >
+            read me
+          </Box>
+          <ReadMoreModal
+            open={open}
+            handleClose={() => setOpen(false)}
+            product={product}
+          />
         </Typography>
       </Stack>
     </Box>

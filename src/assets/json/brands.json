@@ -1,126 +1,198 @@
 [
-    {
-        "id": "chicken-feed",
-        "name": "Chicken Feed",
-        "banner": "chicken",
-        "products": [
-            {
-                "name": "Broiler Concentrate",
-                "image": "broilerConc",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            },
-            {
-                "name": "Broiler Finisher",
-                "image": "broilerFinisher",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            },
-            {
-                "name": "Broiler Growers",
-                "image": "broilerGrowers",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            },
-            {
-                "name": "Broiler Starter",
-                "image": "broilerStarter",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            },
-            {
-                "name": "Early Layers Mash",
-                "image": "earlyLayersMash",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            },
-            {
-                "name": "Layers Concentrate",
-                "image": "layersConc",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            },
-            {
-                "name": "Layers Mash",
-                "image": "layersMash",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            },
-            {
-                "name": "Road Runner Breeder Mash",
-                "image": "roadRunnerBreederMash",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            },
-            {
-                "name": "Road Runner Growers",
-                "image": "roadRunnerGrowers",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            },
-            {
-                "name": "Road Runner Starter",
-                "image": "roadRunnerStarter",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            }
-        ]
+  {
+    "id": "chicken-feed",
+    "name": "Chicken Feed",
+    "banner": "chicken",
+    "products": [
+      {
+        "name": "Broiler Concentrate",
+        "image": "broilerConc",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "name": "Broiler Finisher",
+        "image": "broilerFinisher",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "name": "Broiler Growers",
+        "image": "broilerGrowers",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "name": "Broiler Starter",
+        "image": "broilerStarter",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "name": "Early Layers Mash",
+        "image": "earlyLayersMash",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "name": "Layers Concentrate",
+        "image": "layersConc",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "name": "Layers Mash",
+        "image": "layersMash",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "name": "Road Runner Breeder Mash",
+        "image": "roadRunnerBreederMash",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "name": "Road Runner Growers",
+        "image": "roadRunnerGrowers",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "name": "Road Runner Starter",
+        "image": "roadRunnerStarter",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      }
+    ]
+  },
+
+  {
+    "id": "pig-feed",
+    "name": "Pig Feed",
+    "brief": "In general, pig feed accounts for  70-85% of the total costs of pig production. Different classes of pigs respond differently to different feed rations,therefore knowledge of the nutrients requirements  of pigs is critical for optimum feeding and maximum profitability. Phase feeding in the norm when feeding pigs on commercial basis feeding one type of feed results in overfeeding during the early stages and under-feeding during the latter stage. Various feeding phases or feeding regimes, can be implemented depending on the level of management sophistication. Commercial pig feeds can be supplied in meal (mash) or pellets form,with the latter being slightly  more expensive, but gives beetter feed efficiency.   For each feed, both complete meals (feed- out -of the bag) and concentrates (dilute with maize crush) are available from TANkFISh GROUP (PVT) Ltd. The ZIS-FEEDS pig feeds range covers all thes stages outlined below",
+    "banner": "pig",
+    "products": [
+      {
+        "name": "Boar And Sow Meal",
+        "lname":"ZIS-FEEDS BOAR AND SOW MEAL 16%CP",
+        "image": "boarAndSow",
+        "description": "Breeding STOCK (at least 5-6 months age ) should be fed according to body condition. The boar is given 2 to 3kg  of feed pre day depending on the amount of work the boar is performing. In some practices, after weaning, the sow is starved of feed for 24 hrs and then flushed with 3.7kg of ZIS BOAR  AND SOW MEAL 16%CP per day until she has been served. From then, she is given 2-25kg per day during the first 12 weeks of pregnancy increased to 2.3 -3.5kg per day for the last 3 weeks prior to farrowing. Corn and cob can also be fed during the dry period.",
+        "specs": [
+            { "label": "Proteins", "value": 16 },
+            { "label": "Moisture", "value": 12 },
+            { "label": "Fibre", "value": 6 },
+            { "label": "Phosphorus", "value": 35 },
+            { "label": "Calcium", "value": 25 },
+            { "label": "Lysine", "value": 4 },
+            { "label": "Methionne", "value": 5 }
+          ]
     },
-    {
-        "id": "pig-feed",
-        "name": "Pig Feed",
-        "banner": "pig",
-        "products": [
-            {
-                "name": "Boar And Sow Meal",
-                "image": "boarAndSow",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            },
-            {
-                "name": "Pig Concentrate",
-                "image": "pigConc",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            },
-            {
-                "name": "Pig Creep Meal",
-                "image": "pigCreep",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            },
-            {
-                "name": "Pig Grower Meal",
-                "image": "pigGrower",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            }
+      {
+        "name": "Pig Concentrate",
+        "lname": "ZIS-FEEDS PIG CONCENTRATE MEAL 43%CP",
+        "image": "pigConc",
+        "description": "The feed for grower and finisher stages can be combined in a ZIS PIG GROWER/FINISHER MEAL 43%CP CONCENTRATE. The concentrate version is mixed  2 parts conc 4 parts (by weight) to maize.",
+        "specs": [
+          { "label": "Proteins", "value": 43 },
+          { "label": "Moisture", "value": 20 },
+          { "label": "Fibre", "value": 12 },
+          { "label": "Phosphorus", "value": 45 },
+          { "label": "Calcium", "value": 35 },
+          { "label": "Lysine", "value": 16 },
+          { "label": "Methionne", "value": 12 }
         ]
-    },
-    {
-        "id": "rabbit-feed",
-        "name": "Rabbit Feed",
-        "banner": "rabbit",
-        "products": [
-            {
-                "name": "Rabbit Pallets",
-                "image": "rabbitPallets",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            }
+      },
+      {
+        "name": "Pig Creep Meal",
+        "lname": "ZIS-FEEDS PIG CREEP MEAL 20%CP",
+        "image": "pigCreep",
+        "description": "Pig creep feed supplement dams milk and is given on a little and often basis. Feed ZIS-FEEDS creep meal from about 3kgs live weight (10-14 days onwards)up to 8 or 9kgs (4-5weeks of age) Initially provide 100gm of feed every 5hours and increase the quality and efficiently as the pigs grow older up to ad lib just before weaning. Specific feed ingredients in this nursery diet have a supportive role in the development of the digestive system",
+        "specs": [
+          { "label": "Proteins", "value": 20 },
+          { "label": "Moisture", "value": 12 },
+          { "label": "Fibre", "value": 5 },
+          { "label": "Phosphorus", "value": 35 },
+          { "label": "Calcium", "value": 25 },
+          { "label": "Lysine", "value": 4 },
+          { "label": "Methionne", "value": 5 }
         ]
-    },
-    {
-        "id": "duck-feed",
-        "name": "Duck Feed",
-        "banner": "duck",
-        "products": []
-    },
-    {
-        "id": "medicines",
-        "name": "medicines",
-        "banner": "medicine",
-        "products": [
-            {
-                "name": "3D Stress Pack",
-                "image": "stressPack",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            },
-            {
-                "name": "sb4",
-                "image": "sb4",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            },
-            {
-                "name": "Virus Cleaner",
-                "image": "virusCleaner",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            }
+      },
+      {
+        "name": "Pig Grower Meal",
+        "lname": "ZIS-FEEDS PIG GROWER MEAL 16,5%CP",
+        "image": "pigGrower",
+        "description": "Feeds to growing pigs from 20kgs live weight to about 50-60kg live weight (13-15 weeks of age). Restrict the feed intake initially (from 8-10 weeks of age) to about 1.3kgs per day, but increase gradually to a maximum level of about 2.3kgs per day. For pigs that are lean-type ad lib feeding can be practised.",
+        "specs": [
+          { "label": "Proteins", "value": 16.5 },
+          { "label": "Moisture", "value": 12 },
+          { "label": "Fibre", "value": 6 },
+          { "label": "Phosphorus", "value": 35 },
+          { "label": "Calcium", "value": 25 },
+          { "label": "Lysine", "value": 4 },
+          { "label": "Methionne", "value": 5 }
         ]
-    }
+      },
+      {
+        "name": "*Pig Weaner Meal",
+        "lname": "ZIS-FEEDS PIG WEANER MEAL 18%CP",
+        "image": "pigGrower",
+        "description": "Pig Weaner meal is introduced to weaner piglets from 8kg to 20kgs live weight (8-10 weeks of age). Feeds on ad lib basis",
+        "specs": [
+          { "label": "Proteins", "value": 18 },
+          { "label": "Moisture", "value": 12 },
+          { "label": "Fibre", "value": 6 },
+          { "label": "Phosphorus", "value": 35 },
+          { "label": "Calcium", "value": 25 },
+          { "label": "Lysine", "value": 4 },
+          { "label": "Methionne", "value": 5 }
+        ]
+      },
+      {
+        "name": "*Pig Lactine Meal",
+        "lname": "ZIS-FEEDS PIG LACTATING MEAL 16,5CP",
+        "image": "pigGrower",
+        "description": "Soon after farrowing a sow should be have water first before feed. A lactating sow should be given 2kg feed  per day of PIG LACTATING SOW MEAL 16,5%CP and 0.5kg feed per every piglets  being nursed. For instance lf the sow is nursing 10 piglets, her feed allocation is 7kg feed per day. Avoid losing more that 10kg body weight per sow during lactation. WET FEEDING can be done to stimulate appetite soon after farrowing (mix 1 part feed to 2.5 parts water). Practical farm experience shows that feed intake must be increased during late preganancy to maintain performance and sow longevity.",
+        "specs": [
+          { "label": "Proteins", "value": 16.5 },
+          { "label": "Moisture", "value": 12 },
+          { "label": "Fibre", "value": 6 },
+          { "label": "Phosphorus", "value": 35 },
+          { "label": "Calcium", "value": 25 },
+          { "label": "Lysine", "value": 4 },
+          { "label": "Methionne", "value": 5 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rabbit-feed",
+    "name": "Rabbit Feed",
+    "banner": "rabbit",
+    "products": [
+      {
+        "name": "Rabbit Pallets",
+        "image": "rabbitPallets",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      }
+    ]
+  },
+  {
+    "id": "duck-feed",
+    "name": "Duck Feed",
+    "banner": "duck",
+    "products": []
+  },
+  {
+    "id": "medicines",
+    "name": "medicines",
+    "banner": "medicine",
+    "products": [
+      {
+        "name": "3D Stress Pack",
+        "image": "stressPack",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "name": "sb4",
+        "image": "sb4",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "name": "Virus Cleaner",
+        "image": "virusCleaner",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      }
+    ]
+  }
 ]
