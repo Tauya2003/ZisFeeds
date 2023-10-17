@@ -24,21 +24,7 @@
         "image": "broilerStarter",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       },
-      {
-        "name": "Early Layers Mash",
-        "image": "earlyLayersMash",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      },
-      {
-        "name": "Layers Concentrate",
-        "image": "layersConc",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      },
-      {
-        "name": "Layers Mash",
-        "image": "layersMash",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      },
+
       {
         "name": "Road Runner Breeder Mash",
         "image": "roadRunnerBreederMash",
@@ -56,7 +42,58 @@
       }
     ]
   },
-
+  {
+    "id": "layers-feed",
+    "name": "Layers Feed",
+    "brief": "We produce best quality layers feeds for all three phases of pullet development from day old chick to laying period. ZIS-FEEDS LAYERS feed are specially formulated and its balanced nutritional value promotes a normal gradual growth from day old laying pullets.  The pullet growth and egg production is not limited to feed type only, but good health ,favourable temperatures, fresh clean drinking water, good ventilation, bedding management, maintaining the required stocking density and following the proper vaccination program also contributes to the net result.",
+    "banner": "chicken",
+    "products": [
+      {
+        "name": "Early Layers Mash",
+        "lname": "ZIS-FEEDS EARLY LAYERS MASH 20. 5 CP %",
+        "image": "earlyLayersMash",
+        "description": "This excellent quality feed have been specially formulated for layer chicks from day old up to 8 weeks. Follow the recommendation on brooding to achieve best results. Each brid must feed approximately 2kg for this period. FEED is packed in 5kg ,10kg ,25kg and 50kg.0",
+        "specs": [
+          { "label": "Proteins", "value": 20.5 },
+          { "label": "Calcium", "value": 23 },
+          { "label": "Fibre", "value": 10 },
+          { "label": "Moisture", "value": 5 },
+          { "label": "Phosphorus", "value": 26 }
+        ]
+      },
+      {
+        "name": "Layers Concentrate",
+        "image": "layersConc",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "name": "Layers Mash",
+        "lname": "ZIS-FEEDS LAYERS MASH 15.5% CP ",
+        "image": "layersMash",
+        "description": "Our high quality layers feeds for laying birds ensures best egg production and can be fed to pullets on point of lay from week 18 onwards. Feed approximately 100g of pellets or 125g of mash per bird per day. It also allows continuous  development of internal organs up to week 30 which by then the egg production will have increased to highest peak of above 95%. Always provide fresh clean water to laying brids at all time. Laying hens must be housed in a room temperature ranging from 20^C up to 28^C so as to avoid effects of heat stress. Laying hens must be De-wormed after every 4 months and a vaccination programme to be followed. FEED is packed in 5kg, 10kg 25kg and also 50kg",
+        "specs": [
+          { "label": "Proteins", "value": 15.5 },
+          { "label": "Calcium", "value": 23 },
+          { "label": "Fibre", "value": 10 },
+          { "label": "Moisture", "value": 5 },
+          { "label": "Phosphorus", "value": 26 }
+        ]
+      },
+      {
+        "name": "*Layers Growers Mash",
+        "lname": "ZIS-FEEDS LAYERS GROWERS MASH 17% CP",
+        "image": "layersMash",
+        "description": "Growers mash diet ensures optimum growth of pullet from week 9 to 17 and each pullets consumes approximately 5kg on ad libitum basis. Having a combination of a proper poultry house, good management and proper vaccination programme, this feed produces very healthy pullets on point of lay at week 17.  The growers mash feed develops internal organs and reproductive system. At week 17, the pullet must weight an average of 1.5kg. FEED is packed in 5kg, 10kg 25kg and 50kg",
+        "specs": [
+          { "label": "Proteins", "value": 17 },
+          { "label": "Calcium", "value": 23 },
+          { "label": "Fibre", "value": 10 },
+          { "label": "Moisture", "value": 5 },
+          { "label": "Phosphorus", "value": 26 }
+        ]
+      }
+    ]
+  },
   {
     "id": "pig-feed",
     "name": "Pig Feed",
@@ -65,19 +102,19 @@
     "products": [
       {
         "name": "Boar And Sow Meal",
-        "lname":"ZIS-FEEDS BOAR AND SOW MEAL 16%CP",
+        "lname": "ZIS-FEEDS BOAR AND SOW MEAL 16%CP",
         "image": "boarAndSow",
         "description": "Breeding STOCK (at least 5-6 months age ) should be fed according to body condition. The boar is given 2 to 3kg  of feed pre day depending on the amount of work the boar is performing. In some practices, after weaning, the sow is starved of feed for 24 hrs and then flushed with 3.7kg of ZIS BOAR  AND SOW MEAL 16%CP per day until she has been served. From then, she is given 2-25kg per day during the first 12 weeks of pregnancy increased to 2.3 -3.5kg per day for the last 3 weeks prior to farrowing. Corn and cob can also be fed during the dry period.",
         "specs": [
-            { "label": "Proteins", "value": 16 },
-            { "label": "Moisture", "value": 12 },
-            { "label": "Fibre", "value": 6 },
-            { "label": "Phosphorus", "value": 35 },
-            { "label": "Calcium", "value": 25 },
-            { "label": "Lysine", "value": 4 },
-            { "label": "Methionne", "value": 5 }
-          ]
-    },
+          { "label": "Proteins", "value": 16 },
+          { "label": "Moisture", "value": 12 },
+          { "label": "Fibre", "value": 6 },
+          { "label": "Phosphorus", "value": 35 },
+          { "label": "Calcium", "value": 25 },
+          { "label": "Lysine", "value": 4 },
+          { "label": "Methionne", "value": 5 }
+        ]
+      },
       {
         "name": "Pig Concentrate",
         "lname": "ZIS-FEEDS PIG CONCENTRATE MEAL 43%CP",
@@ -145,6 +182,21 @@
         "description": "Soon after farrowing a sow should be have water first before feed. A lactating sow should be given 2kg feed  per day of PIG LACTATING SOW MEAL 16,5%CP and 0.5kg feed per every piglets  being nursed. For instance lf the sow is nursing 10 piglets, her feed allocation is 7kg feed per day. Avoid losing more that 10kg body weight per sow during lactation. WET FEEDING can be done to stimulate appetite soon after farrowing (mix 1 part feed to 2.5 parts water). Practical farm experience shows that feed intake must be increased during late preganancy to maintain performance and sow longevity.",
         "specs": [
           { "label": "Proteins", "value": 16.5 },
+          { "label": "Moisture", "value": 12 },
+          { "label": "Fibre", "value": 6 },
+          { "label": "Phosphorus", "value": 35 },
+          { "label": "Calcium", "value": 25 },
+          { "label": "Lysine", "value": 4 },
+          { "label": "Methionne", "value": 5 }
+        ]
+      },
+      {
+        "name": "*Pig Finisher Meal",
+        "lname": "ZIS-FEEDS FINISHER MEAL 16%CP",
+        "image": "pigGrower",
+        "description": "Feeds to finishing pig from 50-60kg live weight up to 80-100kg live weight (at 20 weeks of age). Porkers of dressed carcass of  up to 65kg cold dressed masd (CDM) can easily attain super  grades and more lucrative than baconers (approx  + 75kg CDM,or about 25 weeks of age.",
+        "specs": [
+          { "label": "Proteins", "value": 16 },
           { "label": "Moisture", "value": 12 },
           { "label": "Fibre", "value": 6 },
           { "label": "Phosphorus", "value": 35 },
