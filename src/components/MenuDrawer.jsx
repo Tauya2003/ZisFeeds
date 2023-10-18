@@ -5,8 +5,9 @@ import Button from "@mui/material/Button";
 import { KeyboardArrowDown, KeyboardArrowUp, Menu } from "@mui/icons-material";
 import { Collapse, Stack } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import { brands, links } from "../utils/constants";
 
-const MenuDrawer = () => {
+const MenuDrawer = ({ selected, setSelected }) => {
   const navigate = useNavigate();
   const [state, setState] = React.useState({
     top: false,
@@ -14,17 +15,7 @@ const MenuDrawer = () => {
     bottom: false,
     right: false,
   });
-  const [selected, setSelected] = React.useState("Home");
   const [expanded, setExpanded] = React.useState(false);
-
-  const brands = [
-    { name: "Chicken Feed", id: "chicken-feed" },
-    { name: "Layers Feed", id: "layers-feed" },
-    { name: "Pig Feed", id: "pig-feed" },
-    { name: "Rabbit Feed", id: "rabbit-feed" },
-    { name: "Duck Feed", id: "duck-feed" },
-    { name: "Medicines", id: "medicines" },
-  ];
 
   const handleExpand = () => {
     setExpanded(!expanded);
@@ -60,7 +51,7 @@ const MenuDrawer = () => {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <Stack alignItems="center" my={5} gap={1}>
-        {["Home", "About Us", "Brands", "News", "Contact Us"].map((text, id) =>
+        {links.map((text, id) =>
           text === "Brands" ? (
             <Box key={id}>
               <Button
@@ -128,7 +119,7 @@ const MenuDrawer = () => {
                 fontWeight: 700,
                 color: selected === text ? "#046a21" : "#fff",
                 bgcolor: selected === text ? "#dedf21" : undefined,
-                transition: "ease-in-out 0.3s",
+                transition: "all 0.2s linear",
                 fontFamily: "Poppins, sans-serif",
 
                 ":hover": {

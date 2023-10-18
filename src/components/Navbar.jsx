@@ -12,31 +12,12 @@ import {
 import React, { useState } from "react";
 import logo from "../assets/Logo.svg";
 import MenuDrawer from "./MenuDrawer";
+import NavLinks from "./NavLinks";
 
 const Navbar = () => {
-  const [value, setValue] = useState(0);
+  const [selected, setSelected] = useState("Home");
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-
-  const myTabs = ["Home", "About Us", "News", "Contact Us", "Brands"];
-
-  const CustomeTabs = styled(Tabs)({
-    "& .MuiTabs-indicator": {
-      backgroundColor: "#dedf21",
-    },
-  });
-
-  const CustomTab = styled((props) => <Tab {...props} />)(({ theme }) => ({
-    textTransform: "none",
-    color: "#6bbc6f",
-    transition: "ease-in-out 0.9s",
-    fontFamily: "Poppins, sans-serif",
-    fontWeight: 700,
-
-    "&.Mui-selected": {
-      color: "#dedf21",
-    },
-  }));
 
   return (
     <AppBar
@@ -53,21 +34,9 @@ const Navbar = () => {
         </Box>
 
         {isMobile ? (
-          <MenuDrawer />
+          <MenuDrawer selected={selected} setSelected={setSelected} />
         ) : (
-          <Stack>
-            <CustomeTabs value={value} onChange={(e, value) => setValue(value)}>
-              {/* <CustomTab label="Home" />
-              <CustomTab label="About Us" />
-              <CustomTab label="Brands" />
-              <CustomTab label="News" />
-              <CustomTab label="Contact Us" /> */}
-
-              {myTabs.map((item, id) => (
-                <CustomTab key={id} label={item} />
-              ))}
-            </CustomeTabs>
-          </Stack>
+          <NavLinks selected={selected} setSelected={setSelected} />
         )}
       </Toolbar>
     </AppBar>

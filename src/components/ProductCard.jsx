@@ -1,5 +1,5 @@
 import { Box, Button, Stack, Typography } from "@mui/material";
-import { products } from "./allProducts";
+import { products } from "../utils/allProducts";
 import ImageLoader from "./ImageLoader";
 import { useState } from "react";
 import ReadMoreModal from "./ReadMoreModal";

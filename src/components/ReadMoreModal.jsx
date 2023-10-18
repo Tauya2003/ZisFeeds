@@ -5,7 +5,7 @@ import Modal from "@mui/material/Modal";
 import { IconButton, Slider, Stack } from "@mui/material";
 import { Close } from "@mui/icons-material";
 import ImageLoader from "./ImageLoader";
-import { products } from "./allProducts";
+import { products } from "../utils/allProducts";
 
 export default function ReadMoreModal({ open, handleClose, product }) {
   return (
