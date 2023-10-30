@@ -13,6 +13,7 @@ const DropdownMenu = ({
   setIsDropdownOpen,
   cb,
   setCb,
+  fixed,
 }) => {
   const navigate = useNavigate();
 
@@ -41,20 +42,22 @@ const DropdownMenu = ({
           sx={{
             p: 0,
             m: 0,
-            width: 100,
-            height: 35,
-            border: "solid 2px #046a21",
-            borderRadius: "14px",
+            // minWidth: 100,
+            color: fixed ? "#046a21" : "#fff",
+            textAlign: "center",
             textTransform: "none",
-            bgcolor: !notBrands && "#046a21",
-            color: !notBrands ? "#fff" : "#046a21",
-            transition: "all 0.2s linear",
+            transition: "all 0.5s ease",
             fontFamily: "Poppins, sans-serif",
-            fontWeight: 300,
+            fontWeight: 500,
+            fontSize: 16,
+            letterSpacing: 2,
+            cursor: "pointer",
+            borderBottom: "solid 1px transparent",
+            borderRadius: 0,
 
             ":hover": {
-              backgroundColor: "#046a21",
-              color: "#fff",
+              color: "#dedf21",
+              borderBottom: "solid 1px",
             },
           }}
         >

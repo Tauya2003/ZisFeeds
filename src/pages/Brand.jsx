@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 import ImageLoader from "../components/ImageLoader";
 
 import pigBanner from "../assets/images/ads/image2.png";
-import chickenBanner from "../assets/images/ads/image1.png";
+import chickenBanner from "../assets/images/ads/chicken.jpg";
 import duckBanner from "../assets/images/ads/image4.png";
 import medicineBanner from "../assets/images/ads/image7.png";
 import rabbitBanner from "../assets/images/ads/image9.png";
@@ -57,15 +57,33 @@ const Brand = () => {
       <Box
         sx={{
           width: "100%",
-          mb: "26px",
+          mb: "64px",
+          background: `url(${banners[brandData.banner].url})`,
+          height: { xs: 236, sm: 410, lg: "100vh" },
+          backgroundSize: "cover",
         }}
       >
-        <ImageLoader
+        <Box
+          sx={{
+            zIndex: 1000,
+            boxSizing: "border-box",
+            backgroundColor: "#000",
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            opacity: 0.5,
+          }}
+        />
+        {/* <ImageLoader
           src={banners[brandData.banner].url}
           hash={banners[brandData.banner].hash}
           alt={brandData.name}
           height={{ xs: 236, sm: 410 }}
-        />
+        /> */}
+
+        {/* <img src={banners[brandData.banner].url} alt="" srcset="" style={{width: '100%'}} /> */}
       </Box>
 
       <Box

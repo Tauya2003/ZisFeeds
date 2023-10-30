@@ -9,6 +9,7 @@ const Home = () => {
     <Stack alignItems={"center"} pb={5} width={"100vw"}>
       <Box
         sx={{
+          position: "relative",
           width: "100%",
           // height: { lg: 362 },
           display: "flex",
@@ -16,6 +17,19 @@ const Home = () => {
           justifyContent: "center",
         }}
       >
+        <Box
+          sx={{
+            zIndex: 1000,
+            boxSizing: "border-box",
+            backgroundColor: "#000",
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            opacity: 0.5,
+          }}
+        />
         <Carousel />
       </Box>
 
@@ -116,8 +130,8 @@ const Home = () => {
       <Box
         sx={{
           width: "100%",
-          display: {md: "grid"},
-          placeContent:{md: "center"},
+          display: { md: "grid" },
+          placeContent: { md: "center" },
           height: { xs: 321, sm: 504 },
           bgcolor: "#66bb6a",
           px: 2,
@@ -155,7 +169,7 @@ const Home = () => {
 
         <Stack
           direction={"row"}
-          gap={{xs:"20px",xl: "40px"}}
+          gap={{ xs: "20px", xl: "40px" }}
           pl={"20px"}
           pb={"30px"}
           sx={{ width: "100%", overflowX: "auto" }}
