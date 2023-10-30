@@ -33,12 +33,13 @@ const Home = () => {
         <Carousel />
       </Box>
 
+      <Box id="vision" />
+
       <Box
-        id="vision"
         component={"section"}
         sx={{
           bgcolor: "#66bb6a",
-          mt: { xs: "28px", sm: "60px", lg: "72px" },
+          mt: { xs: "55px", sm: "60px", lg: "72px" },
           px: "20px",
           gap: { xs: 1, sm: 4, lg: 2 },
           display: "flex",
@@ -94,6 +95,7 @@ const Home = () => {
         }}
       >
         <Typography
+          id="products"
           sx={{
             mt: { xs: "42px", lg: "58px" },
             color: "#4c554e",

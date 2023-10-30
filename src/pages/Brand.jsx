@@ -6,11 +6,11 @@ import ProductCard from "../components/ProductCard";
 import Footer from "../components/Footer";
 import ImageLoader from "../components/ImageLoader";
 
-import pigBanner from "../assets/images/ads/image2.png";
-import chickenBanner from "../assets/images/ads/chicken.jpg";
-import duckBanner from "../assets/images/ads/image4.png";
-import medicineBanner from "../assets/images/ads/image7.png";
-import rabbitBanner from "../assets/images/ads/image9.png";
+import pigBanner from "../assets/images/ads/image2.jpg";
+import chickenBanner from "../assets/images/ads/image1.jpg";
+import duckBanner from "../assets/images/ads/image4.jpg";
+import medicineBanner from "../assets/images/ads/image7.jpg";
+import rabbitBanner from "../assets/images/ads/image9.jpg";
 
 const banners = {
   pig: { url: pigBanner, hash: "LkQS^KsKt7Nf-bM}WakCORs$V@R+" },
@@ -56,6 +56,7 @@ const Brand = () => {
     >
       <Box
         sx={{
+          position: "relative",
           width: "100%",
           mb: "64px",
           background: `url(${banners[brandData.banner].url})`,
@@ -73,7 +74,7 @@ const Brand = () => {
             left: 0,
             right: 0,
             bottom: 0,
-            opacity: 0.5,
+            opacity: { xs: 0.4, sx: 0.5 },
           }}
         />
         {/* <ImageLoader

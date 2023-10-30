@@ -5,6 +5,20 @@ import { Link } from "react-router-dom";
 import { Link as MuiLink } from "@mui/material";
 
 const Footer = () => {
+  function handleClick(e, hash) {
+    e.preventDefault();
+
+    const targetElement = document.querySelector(hash);
+    if (targetElement) {
+      const topOffset =
+        targetElement.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({
+        top: topOffset,
+        behavior: "smooth",
+      });
+    }
+  }
+
   return (
     <Box
       component={"footer"}
@@ -24,11 +38,18 @@ const Footer = () => {
           gap: "21px",
         }}
       >
-        <Stack direction={"row"} gap={{xs:"31px",sm:"90px"}} alignItems={"center"}>
+        <Stack
+          direction={"row"}
+          gap={{ xs: "31px", sm: "90px" }}
+          alignItems={"center"}
+        >
           <img src={logo} alt="zisfeeds logo" style={{ width: 35 }} />
 
           <Stack direction={"row"} gap={{ xs: "22px", sm: "87px" }}>
-            <MuiLink href="#vision" style={{ textDecoration: "none" }}>
+            <MuiLink
+              style={{ textDecoration: "none" }}
+              onClick={(e) => handleClick(e, "#vision")}
+            >
               <Typography
                 sx={{
                   color: "rgba(76, 85, 78, 0.58)",
@@ -45,41 +66,53 @@ const Footer = () => {
               </Typography>
             </MuiLink>
 
-            <Typography
-              sx={{
-                color: "rgba(76, 85, 78, 0.58)",
-                fontFamily: "Poppins,sans-sarif",
-                fontSize: 9,
-                fontWeight: 600,
-
-                ":hover": {
-                  color: "#4c554e",
-                },
-              }}
+            <MuiLink
+              style={{ textDecoration: "none" }}
+              onClick={(e) => handleClick(e, "#products")}
             >
-              Products
-            </Typography>
+              <Typography
+                sx={{
+                  color: "rgba(76, 85, 78, 0.58)",
+                  fontFamily: "Poppins,sans-sarif",
+                  fontSize: 9,
+                  fontWeight: 600,
+                  cursor: "pointer",
 
-            <Typography
-              sx={{
-                color: "rgba(76, 85, 78, 0.58)",
-                fontFamily: "Poppins,sans-sarif",
-                fontSize: 9,
-                fontWeight: 600,
+                  ":hover": {
+                    color: "#4c554e",
+                  },
+                }}
+              >
+                Products
+              </Typography>
+            </MuiLink>
 
-                ":hover": {
-                  color: "#4c554e",
-                },
-              }}
+            <Link
+              to="https://api.whatsapp.com/send?phone=+263779662088"
+              target="_blank"
+              style={{ display: "flex", textDecoration: "none" }}
             >
-              Contact Us
-            </Typography>
+              <Typography
+                sx={{
+                  color: "rgba(76, 85, 78, 0.58)",
+                  fontFamily: "Poppins,sans-sarif",
+                  fontSize: 9,
+                  fontWeight: 600,
+
+                  ":hover": {
+                    color: "#4c554e",
+                  },
+                }}
+              >
+                Contact Us
+              </Typography>
+            </Link>
           </Stack>
         </Stack>
 
         <Stack
           direction={"row"}
-          gap={{xs: "46px", sm: "100px"}}
+          gap={{ xs: "46px", sm: "100px" }}
           sx={{ borderBottom: "1px solid #0002", pb: "11px" }}
         >
           <Box>
@@ -166,12 +199,13 @@ const Footer = () => {
           >
             <WhatsApp sx={{ color: "#046a21", width: 20 }} />
           </Link>
+
           <Typography
             flexGrow={1}
             sx={{
               color: "#046a21",
               FontFamily: "Poppins, sans-sarif",
-              fontSize: 5,
+              fontSize: { xs: 5, md: 10 },
               fontWeight: 700,
               textTransform: "uppercase",
             }}
@@ -183,11 +217,11 @@ const Footer = () => {
             sx={{
               color: "#4c554e",
               FontFamily: "Poppins, sans-sarif",
-              fontSize: 5,
+              fontSize: { xs: 5, md: 10 },
               fontWeight: 700,
             }}
           >
-            Copyright @WhiteCode
+            Copyright @ZisFeeds
           </Typography>
         </Stack>
       </Box>
