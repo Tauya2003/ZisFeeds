@@ -48,7 +48,7 @@ const Footer = () => {
           <Stack
             direction={"row"}
             justifyContent={"space-between"}
-            gap={{ xs: "22px", sm: "87px", bgcolor: 'green', width: '100%' }}
+            gap={{ xs: "22px", sm: "87px", width: "100%" }}
           >
             {/* Vision Link */}
             <MuiLink
@@ -196,15 +196,21 @@ const Footer = () => {
         </Stack>
 
         <Stack direction={"row"} gap={"12px"} alignItems={"center"}>
-          <Facebook sx={{ color: "#046a21", width: 20 }} />
-          <Instagram sx={{ color: "#046a21", width: 20 }} />
+          <Facebook
+            sx={{ color: "#046a21", width: 20, fontSize: { xs: 16 } }}
+          />
+          <Instagram
+            sx={{ color: "#046a21", width: 20, fontSize: { xs: 16 } }}
+          />
 
           <Link
             to="https://api.whatsapp.com/send?phone=+263779662088"
             target="_blank"
             style={{ display: "flex" }}
           >
-            <WhatsApp sx={{ color: "#046a21", width: 20 }} />
+            <WhatsApp
+              sx={{ color: "#046a21", width: 20, fontSize: { xs: 16 } }}
+            />
           </Link>
 
           <Typography
