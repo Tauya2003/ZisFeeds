@@ -91,11 +91,11 @@ const MenuDrawer = ({ selected, setSelected }) => {
                         transition: "0.3s",
                         fontFamily: "Poppins, sans-serif",
                         fontWeight: selected === brand.name ? 700 : 400,
-                        border:
+                        borderBottom:
                           selected === brand.name
                             ? "2px solid #dedf21"
                             : "2px solid #0000",
-                        borderRadius: "14px",
+                        borderRadius: "0",
                       }}
                     >
                       {brand.name}
