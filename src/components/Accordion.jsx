@@ -7,10 +7,18 @@ import image5 from "../assets/images/brands/Pigs/BOAR&SOW.png";
 import image3 from "../assets/images/brands/Pigs/PIG CREEP.png";
 import image4 from "../assets/images/brands/Chicken/Broiler Starter.png";
 import image2 from "../assets/images/brands/Rabbit/Rabbit Pallet.png";
+import { useNavigate } from "react-router-dom";
 
-const cards = [image1, image2, image3, image4, image5];
+const cards = [
+  { img: image1, id: "chicken-feed" },
+  { img: image2, id: "rabbit-feed" },
+  { img: image3, id: "pig-feed" },
+  { img: image4, id: "chicken-feed" },
+  { img: image5, id: "pig-feed" },
+];
 
 const Accordion = () => {
+  const navigate = useNavigate();
   const [active, setActive] = useState(2);
 
   return (
@@ -37,7 +45,7 @@ const Accordion = () => {
           }}
         >
           <img
-            src={card}
+            src={card.img}
             alt=""
             style={{
               position: "absolute",
@@ -68,7 +76,7 @@ const Accordion = () => {
               transition: "0.25s",
             }}
           >
-            <IconButton>
+            <IconButton onClick={()=> navigate(`brand/${card.id}`)}>
               <Visibility sx={{ color: "#046a21" }} />
             </IconButton>
           </Box>
