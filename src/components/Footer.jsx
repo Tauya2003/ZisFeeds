@@ -45,7 +45,12 @@ const Footer = () => {
         >
           <img src={logo} alt="zisfeeds logo" style={{ width: 35 }} />
 
-          <Stack direction={"row"} gap={{ xs: "22px", sm: "87px" }}>
+          <Stack
+            direction={"row"}
+            justifyContent={"space-between"}
+            gap={{ xs: "22px", sm: "87px", bgcolor: 'green', width: '100%' }}
+          >
+            {/* Vision Link */}
             <MuiLink
               style={{ textDecoration: "none" }}
               onClick={(e) => handleClick(e, "#vision")}
@@ -66,6 +71,7 @@ const Footer = () => {
               </Typography>
             </MuiLink>
 
+            {/* Products Link */}
             <MuiLink
               style={{ textDecoration: "none" }}
               onClick={(e) => handleClick(e, "#products")}
@@ -87,6 +93,7 @@ const Footer = () => {
               </Typography>
             </MuiLink>
 
+            {/* Contact Us Link */}
             <Link
               to="https://api.whatsapp.com/send?phone=+263779662088"
               target="_blank"
