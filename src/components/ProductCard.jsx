@@ -90,7 +90,7 @@ const ProductCard = ({ product }) => {
               cursor: "pointer",
             }}
           >
-            read me
+            read more
           </Box>
           <ReadMoreModal
             open={open}
