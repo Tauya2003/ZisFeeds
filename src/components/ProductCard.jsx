@@ -71,7 +71,7 @@ const ProductCard = ({ product }) => {
 
         <Typography
           sx={{
-            color: "#c1cac3",
+            color: "#5d635e",
             fontFamily: "Poppins, sans-sarif",
             fontSize: 10,
             fontWeight: 400,
