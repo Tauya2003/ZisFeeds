@@ -41,12 +41,11 @@ export default function ReadMoreModal({ open, handleClose, product }) {
               position: "absolute",
               right: 15,
               top: 15,
-              border: "solid 1px #dedf21",
               p: 0,
               color: "#dedf21",
             }}
           >
-            <Close sx={{ height: 15, width: 15 }} />
+            <Close sx={{ fontSize: 20 }} />
           </IconButton>
 
           <Stack direction={"row"} alignItems={"center"} gap={2} my={2}>
