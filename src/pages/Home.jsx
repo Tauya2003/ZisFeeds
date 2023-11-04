@@ -3,6 +3,8 @@ import TestimonialCard from "../components/TestimonialCard";
 import Carousel from "../components/Carousel";
 import Accordion from "../components/Accordion";
 import Footer from "../components/Footer";
+import bg from "../assets/images/bgshapes.png";
+import rectangle from "../assets/images/rectangle.png";
 
 const Home = () => {
   return (
@@ -38,7 +40,8 @@ const Home = () => {
       <Box
         component={"section"}
         sx={{
-          bgcolor: "#66bb6a",
+          background: `url(${rectangle}) no-repeat center center #66bb6a`,
+          backgroundSize: "cover",
           mt: { xs: "55px", sm: "60px", lg: "72px" },
           px: "20px",
           gap: { xs: 1, sm: 4, lg: 2 },
@@ -92,6 +95,10 @@ const Home = () => {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
+          width: "100%",
+          background: `url(${bg}) no-repeat `,
+          backgroundSize: "cover",
+          backgroundPosition: {xs: "10% 40px",sm: "center 0px", lg: "center center", xl: "center 0px"},
         }}
       >
         <Typography
@@ -135,7 +142,8 @@ const Home = () => {
           display: { md: "grid" },
           placeContent: { md: "center" },
           height: { xs: 321, sm: 504 },
-          bgcolor: "#66bb6a",
+          background: `url(${rectangle}) no-repeat center center #66bb6a`,
+          backgroundSize: "cover",
           px: 2,
         }}
       >
