@@ -18,7 +18,7 @@ import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [selected, setSelected] = useState("Home");
-  const [fixed, setFixed] = useState(false);
+  const [fixed, setFixed] = useState(true);
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
@@ -35,28 +35,26 @@ const Navbar = () => {
     navigate("/");
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setFixed(true);
-      } else {
-        setFixed(false);
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 100) {
+  //       setFixed(true);
+  //     } else {
+  //       setFixed(false);
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  console.log(fixed);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
   return (
     <AppBar
-      // className={fixed ? "fixed" : ""}
       elevation={0}
       sx={{
-        position: fixed ? "fixed" : "absolute",
+        // position: fixed ? "fixed" : "absolute",
+        position: "sticky",
         bgcolor: fixed ? "#fff" : "transparent",
         color: fixed ? "#046a21" : "#fff",
         fontFamily: "Poppins, sans-serif",
