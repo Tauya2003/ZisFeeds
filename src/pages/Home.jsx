@@ -26,19 +26,7 @@ const Home = () => {
             justifyContent: "center",
           }}
         >
-          <Box
-            sx={{
-              zIndex: 1000,
-              boxSizing: "border-box",
-              backgroundColor: "#000",
-              position: "absolute",
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              opacity: 0.5,
-            }}
-          />
+          
           <Carousel />
         </Box>
 
