@@ -5,52 +5,63 @@ const TestimonialCard = () => {
   return (
     <Box
       sx={{
+        width: 335,
+        height: 251,
+        borderRadius: "16px",
         display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        gap: "12px",
-        px: {xs: "18px", lg: '25px'},
-        minWidth: { xs: 260, sm: 355, lg: 421.48 },
-        maxWidth: { xs: 260, sm: 355, lg: 421.48 },
-        height: { xs: 131, sm: 175, lg: 227.9 },
-        borderRadius: { xs: "19px", lg: "34px" },
-        bgcolor: "#67b36b",
+        gap: "16px",
+        padding: "16px",
+        boxShadow: "0 0 10px #c4c4c4",
+        bgcolor: "#FFF",
+        mb: "44px",
       }}
     >
-      <Avatar
-        src={image}
-        alt="Takudzwa Hyut"
+      <Box
         sx={{
-          width: { xs: 67, lg: 100 },
-          height: { xs: 67, lg: 100 },
-          border: "solid 7px #7fd67b",
+          height: "100%",
+          display: "grid",
+          alignItems: "center",
         }}
-      />
+      >
+        <Avatar
+          src={image}
+          alt={"Hannah Chimuti"}
+          sx={{ width: 112, height: 127 }}
+        />
+      </Box>
 
-      <Stack gap={1}>
+      <Stack gap={"12px"} justifyContent={'center'}>
         <Typography
           sx={{
-            color: "#fff",
             fontFamily: "Poppins, sans-sarif",
-            fontSize: { xs: 13, lg: 16 },
-            fontWeight: 700,
+            fontSize: 20,
+            fontWeight: 600,
+            width: 153,
+            color: "#3d3d3d",
           }}
         >
-          Takudzwa Hyut
+          Hannah Chimuti
         </Typography>
 
         <Typography
           sx={{
-            color: "#fff",
             fontFamily: "Poppins, sans-sarif",
-            fontSize: { xs: 6, lg: 12 },
-            fontStyle: "italic",
+            fontSize: 12,
+            color: "#3d3d3d",
           }}
         >
-          "Since switching to their feed products, we have seen a remarkable
-          improvement in the health and performance of our livestock. Our
-          animals are thriving, producing better yields, and showing increased
-          resistance to diseases. We couldn't be happier with the results!"
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+          tincidunt tellus lacus. Duis quis mi ante. Fusce sed arcu euismod.
+        </Typography>
+
+        <Typography
+          sx={{
+            fontFamily: "Poppins, sans-sarif",
+            fontSize: 12,
+            color: "#525252",
+          }}
+        >
+          May 8, 2020
         </Typography>
       </Stack>
     </Box>
