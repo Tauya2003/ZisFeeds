@@ -13,11 +13,10 @@ import { CircleOutlined, WhatsApp } from "@mui/icons-material";
 import { products } from "../utils/allProducts";
 import pigFeed from "../assets/images/brands/Pigs/PIG CONCENTRATE.png";
 import ImageLoader from "../components/ImageLoader";
+import chickenBg from "../assets/images/home/chickenBg.png";
 
 const description =
   " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impeditn dolores pariatur nam beatae ut tempora minima cum velit rem. Corporis veritatis possimus voluptas esse ea eum vero eligendi, deserunt porro!";
-
-
 
 const Home = () => {
   return (
@@ -27,12 +26,7 @@ const Home = () => {
       transition={{ ease: "easeInOut", duration: 1 }}
       exit={{ opacity: 0 }}
     >
-      <Stack
-        alignItems={"center"}
-        pb={5}
-        width={"100vw"}
-        sx={{ bgcolor: "#fffffa" }}
-      >
+      <Stack alignItems={"center"} pb={5} width={"100vw"}>
         <Box
           component={"section"}
           sx={{
@@ -57,13 +51,13 @@ const Home = () => {
             display: "flex",
             flexWrap: "wrap",
             width: "100%",
-            flexDirection: { xs: "column", sm: "row-reverse" },
+            flexDirection: { xs: "row", sm: "row-reverse" },
             justifyContent: { xs: "center", sm: "space-between" },
-            px: { xs: "45px", sm: "51px" },
-            pt: { sm: "120px" },
+            px: { xs: "45px", sm: 5 },
+            pt: { sm: "70px" },
           }}
         >
-          <Box sx={{ width: { xs: "100%", sm: "50%" } }}>
+          <Box sx={{ width: { xs: "100%", sm: "calc(50% - 40px)" } }}>
             <Typography
               sx={{
                 color: "#4c554e",
@@ -83,7 +77,7 @@ const Home = () => {
                 color: "#43a047",
                 fontFamily: "Poppins, sans-sarif",
                 fontSize: { xs: 43 },
-                fontWeight: 600,
+                fontWeight: 900,
                 width: 222,
                 lineHeight: 1,
                 my: "24px",
@@ -118,7 +112,7 @@ const Home = () => {
               mt: { xs: "40px", sm: "60px" },
               position: "relative",
               height: "330px",
-              width: { xs: "100%", sm: "45%" },
+              width: { xs: "100%", sm: "50%" },
             }}
           >
             <img
@@ -135,6 +129,11 @@ const Home = () => {
                 maxWidth: "100%",
                 overflow: "hidden",
                 borderRadius: "40px",
+
+                "@media (min-width: 600px)": {
+                  height: 3300,
+                  width: 240,
+                },
               }}
             />
             <img
@@ -169,6 +168,7 @@ const Home = () => {
                 fontWeight: 600,
                 background: "#fff",
                 textTransform: "capitalize",
+                boxShadow: "-7px 5px 10px #0005",
 
                 "&:hover": {
                   background: "#43a047",
@@ -184,10 +184,12 @@ const Home = () => {
         <Box
           component={"section"}
           sx={{
+            mt: { lg: "30px" },
             gap: 1,
             display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
+            flexDirection: "row",
+            flexWrap: "wrap",
+            justifyContent: "space-between",
             width: "100%",
           }}
         >
@@ -195,8 +197,8 @@ const Home = () => {
             sx={{
               mt: "65px",
               bgcolor: "#046A21",
-              width: 286,
-              height: 233,
+              width: { xs: 286, sm: "50%" },
+              height: { xs: 233, sm: 284 },
               display: "grid",
               placeContent: "center",
             }}
@@ -224,17 +226,16 @@ const Home = () => {
               fontSize: 15.63,
               fontWeight: 500,
               fontStyle: "italic",
-              mx: 5,
+              width: { sm: "calc(50% - 90px)", lg: "calc(50% - 170px)" },
+              mx: { xs: 5, sm: 0 },
+              mr: { sm: 5, lg: 7 },
               pb: { xs: "30px", lg: "85px" },
-              mt: "30px",
+              mt: { xs: "30px", sm: "10%" },
             }}
           >
             Leveraging state-of-the-art technology, we produce nutritionally
             balanced and high-quality feed that meets the dietary needs of
-            livestock, ensuring optimal growth and health.Tailored to your
-            livestock's specific needs, our team can formulate custom blends
-            that cater to unique dietary requirements, maximizing productivity
-            and overall animal health.
+            livestock, ensuring optimal growth and health.
           </Typography>
         </Box>
 
@@ -253,84 +254,102 @@ const Home = () => {
         </Box> */}
 
         {/* Slider Section */}
-        <Box
-          sx={{
-            width: 300,
-            // height: 600,
-            boxShadow: " 0 0 10px #ccc",
-            borderRadius: "15px",
-            p: "25px",
-          }}
-        >
-          <Box sx={{ height: 325, display: 'grid',  placeContent: 'center' }}>
-            <ImageLoader
-              src={pigFeed}
-              hash={"LUNdaWNMT#t1p2xaVsR$lBIo#Q$+"}
-              alt={"pig-feed"}
-              height={265}
-              width={130}
-            />
-          </Box>
-
-          <Typography
+        <Box sx={{ position: "relative", mt: { sm: -10 } }}>
+          <Box
             sx={{
-              fontSize: 27.63,
-              fontWeight: 600,
-              textAlign: "left",
-              mb: "20px",
+              width: 300,
+              // height: 600,
+              boxShadow: " 0 0 10px #0009",
+              bgcolor: "#fff",
+              borderRadius: "15px",
+              p: "25px",
             }}
           >
-            Pig Feed
-          </Typography>
-
-          <Typography
-            sx={{
-              fontFamily: "Poppins, sans-sarif",
-              color: "#95a098",
-              fontSize: 17.63,
-              fontWeight: 500,
-            }}
-          >
-            {description.slice(0, 150)}...
-          </Typography>
-
-          <Button
-            endIcon={
-              <CircleOutlined
-                sx={{ width: "30px", height: "30px", ml: "20px" }}
+            <Box sx={{ height: 325, display: "grid", placeContent: "center" }}>
+              <ImageLoader
+                src={pigFeed}
+                hash={"LUNdaWNMT#t1p2xaVsR$lBIo#Q$+"}
+                alt={"pig-feed"}
+                height={265}
+                width={130}
               />
-            }
-            sx={{
-              color: "#fff",
-              fontFamily: "Poppins, sans-sarif",
-              fontSize: 17.48,
-              fontWeight: 500,
-              bgcolor: "#000",
-              textTransform: "capitalize",
-              borderRadius: "50px",
-              width: 163.6,
-              height: 50,
-              mt: "20px",
+            </Box>
 
-              "&:hover": {
+            <Typography
+              sx={{
+                fontSize: 27.63,
+                fontWeight: 600,
+                textAlign: "left",
+                mb: "20px",
+              }}
+            >
+              Pig Feed
+            </Typography>
+
+            <Typography
+              sx={{
+                fontFamily: "Poppins, sans-sarif",
+                color: "#95a098",
+                fontSize: 17.63,
+                fontWeight: 500,
+              }}
+            >
+              {description.slice(0, 150)}...
+            </Typography>
+
+            <Button
+              endIcon={
+                <CircleOutlined
+                  sx={{ width: "30px", height: "30px", ml: "20px" }}
+                />
+              }
+              sx={{
+                color: "#fff",
+                fontFamily: "Poppins, sans-sarif",
+                fontSize: 17.48,
+                fontWeight: 500,
                 bgcolor: "#000",
-              },
-            }}
-          >
-            Button
-          </Button>
+                textTransform: "capitalize",
+                borderRadius: "50px",
+                width: 163.6,
+                height: 50,
+                mt: "20px",
+
+                "&:hover": {
+                  bgcolor: "#000",
+                },
+              }}
+            >
+              Button
+            </Button>
+          </Box>
         </Box>
 
         {/* Why Choose Us Section */}
-        <Box sx={{ bgcolor: "#f0f0f2", py: "50px", px: "60px", mt: "65px" }}>
+        <Box
+          sx={{
+            width: "100%",
+            bgcolor: "#f0f0f2",
+            py: "50px",
+            px: "60px",
+            mt: "65px",
+            pl: { sm: "105px", lg: "227px" },
+            pt: { sm: "65px" },
+            backgroundImage: `url(${chickenBg})`,
+            backgroundSize: { xs: "55%", sm: "75%", lg: "40%" },
+            backgroundPosition: { xs: "120% 20%",sm: "220% 20%", lg: "120% 20%" },
+            backgroundRepeat: "no-repeat",
+          }}
+        >
           <Typography
             sx={{
               fontFamily: "Poppins, sans-sarif",
               color: "#212b36",
-              fontSize: 41,
-              width: 223,
+              fontSize: {xs:41, lg: 64},
+              width: { xs: 223, sm: "auto" },
               fontWeight: 700,
               mb: "24px",
+              lineHeight: 1.2,
             }}
           >
             Why Choose Us?
@@ -339,9 +358,10 @@ const Home = () => {
           <Typography
             sx={{
               fontFamily: "Poppins, sans-sarif",
-              fontSize: 14,
+              fontSize: { xs: 14, lg: 16 },
               lineHeight: "24px",
-              mb: "75px",
+              mb: "50px",
+              width: { sm: "49%", lg: "69%" },
             }}
           >
             We provide top-quality, nutrient-rich products that boost crop
@@ -360,6 +380,7 @@ const Home = () => {
             alignItems: "center",
             justifyContent: "center",
             gap: "25px",
+            mt: "65px",
           }}
         >
           <Typography
@@ -370,6 +391,7 @@ const Home = () => {
               fontSize: { xs: 13, sm: 18, lg: 25.36, xl: 30.98 },
               fontWeight: 700,
               textTransform: "uppercase",
+              textAlign: "center",
               width: { sm: 190, lg: 248 },
               pt: "7px",
               mt: { xs: "30px", sm: "40" },
