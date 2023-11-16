@@ -7,4 +7,4 @@ export const brands = [
   { name: "Medicines", id: "medicines" },
 ];
 
-export const links = ["Home", "About Us", "Brands", "News"];
+export const links = ["Home", "About Us", "News", "Brands"];

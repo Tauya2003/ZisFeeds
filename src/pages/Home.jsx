@@ -1,6 +1,5 @@
 import { Box, Button, Stack, Typography } from "@mui/material";
 import TestimonialCard from "../components/TestimonialCard";
-import Carousel from "../components/Carousel";
 import Accordion from "../components/Accordion";
 import Footer from "../components/Footer";
 import bg from "../assets/images/bgshapes.png";
