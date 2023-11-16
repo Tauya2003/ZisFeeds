@@ -114,56 +114,50 @@ const Home = () => {
               width: { xs: "100%", sm: "50%" },
             }}
           >
-            <img
-              alt=""
-              src={layersFeeding}
-              style={{
-                height: 265,
-                width: 195,
+            <Box
+              sx={{
+                height: { xs: 265, sm: 290, lg: 335 },
+                width: { xs: 195, sm: 250, lg: 290 },
                 top: 0,
-                left: 0,
-                maxHeight: "100%",
-                objectFit: "cover",
+                left: { xs: 0, sm: "10%", lg: "20%" },
                 position: "absolute",
-                maxWidth: "100%",
                 overflow: "hidden",
                 borderRadius: "40px",
-
-                "@media (min-width: 600px)": {
-                  height: 3300,
-                  width: 240,
-                },
+                background: `url(${layersFeeding}) no-repeat`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
               }}
             />
-            <img
-              src={pigs}
-              style={{
-                height: 137,
-                width: 190,
+
+            <Box
+              sx={{
+                height: { xs: 137, sm: 181, lg: 235 },
+                width: { xs: 190, sm: 247, lg: 282 },
                 top: 183,
                 bottom: 0,
-                left: "100px",
-                maxheight: "100%",
-                objectFit: "cover",
+                left: { xs: "100px", sm: "calc(10% + 100px)", lg: "calc(20% + 100px)" },
                 position: "absolute",
-                maxWidth: "100%",
                 overflow: "hidden",
-                borderRadius: "40px",
+                borderRadius: { xs: "40px", sm: "50px" },
                 border: "solid 10px #fff",
+                background: `url(${pigs}) no-repeat`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
               }}
             />
-
             <Button
-              startIcon={<WhatsApp />}
+              startIcon={
+                <WhatsApp sx={{ width: { sm: 40 }, height: { sm: 40 } }} />
+              }
               sx={{
                 position: "absolute",
                 top: 140,
-                left: -20,
+                left: { xs: -20, sm: "calc(10% - 20px)", lg: "calc(20% - 20px)" },
                 borderRadius: "25px",
-                width: 184,
-                height: 61,
+                width: { xs: 184, sm: 280 },
+                height: { xs: 61, sm: 80 },
                 color: "#25d366",
-                fontSize: 18,
+                fontSize: { xs: 18, sm: 23 },
                 fontWeight: 600,
                 background: "#fff",
                 textTransform: "capitalize",
@@ -336,7 +330,11 @@ const Home = () => {
             pt: { sm: "65px" },
             backgroundImage: `url(${chickenBg})`,
             backgroundSize: { xs: "55%", sm: "75%", lg: "40%" },
-            backgroundPosition: { xs: "120% 20%",sm: "220% 20%", lg: "120% 20%" },
+            backgroundPosition: {
+              xs: "120% 20%",
+              sm: "220% 20%",
+              lg: "120% 20%",
+            },
             backgroundRepeat: "no-repeat",
           }}
         >
@@ -344,7 +342,7 @@ const Home = () => {
             sx={{
               fontFamily: "Poppins, sans-sarif",
               color: "#212b36",
-              fontSize: {xs:41, lg: 64},
+              fontSize: { xs: 41, lg: 64 },
               width: { xs: 223, sm: "auto" },
               fontWeight: 700,
               mb: "24px",
