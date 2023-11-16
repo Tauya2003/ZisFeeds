@@ -19,11 +19,13 @@ body {
   top: -10px;
   right: 0;
   width: 20px;
-  height: 20px;
-  background-color: #046a21;
-  border-radius: 50% 50% 0 50%;
+  height: 10px;
+  border-radius: 50% 50% 0 0%;
   content: "";
   display: block;
   z-index: -2;
   transition: all 200ms linear;
+  background-color: inherit;
+  backdrop-filter: inherit;
+  -webkit-backdrop-filter: inherit;
 }

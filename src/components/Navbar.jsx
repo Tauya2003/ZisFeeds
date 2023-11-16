@@ -24,14 +24,12 @@ const Navbar = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const navigate = useNavigate();
-  const [notBrands, setNotBrands] = useState(true);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [cb, setCb] = useState();
 
   const handleClick = (text) => {
     setCb(), setIsDropdownOpen(false);
     setSelected(text);
-    setNotBrands(true);
     navigate("/");
   };
 
@@ -74,8 +72,6 @@ const Navbar = () => {
               text === "Brands" ? (
                 <DropdownMenu
                   key={id}
-                  notBrands={notBrands}
-                  setNotBrands={setNotBrands}
                   selected={selected}
                   setSelected={setSelected}
                   isDropdownOpen={isDropdownOpen}
@@ -96,9 +92,9 @@ const Navbar = () => {
                     textTransform: "none",
                     transition: "all 0.5s ease",
                     fontFamily: "Poppins, sans-serif",
-                    fontWeight: 500,
-                    fontSize: 16,
-                    letterSpacing: 2,
+                    fontWeight: 700,
+                    fontSize: 11,
+                    letterSpacing: "13%",
                     cursor: "pointer",
                     borderBottom: "solid 1px transparent",
 
